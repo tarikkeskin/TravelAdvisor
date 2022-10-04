@@ -37,13 +37,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
-            app:tabIconTint="#FF4760"
-            app:tabIndicatorColor="#FF4760"
-            app:tabTextColor="#FF4760"
+            app:tabIconTint="@color/bottom_nav_color"
+            app:tabIndicatorColor="@color/primary_1"
+            app:tabTextColor="@color/bottom_nav_color"
             app:tabMode="fixed"
             app:tabGravity="fill"
             app:tabInlineLabel="true"
-            app:tabIndicatorHeight="0dp">
+            >
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
@@ -65,8 +65,25 @@
             android:layout_marginTop="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+            app:layout_constraintTop_toBottomOf="@+id/tab_layout"
+            app:layout_constraintVertical_bias="1.0">
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="106dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/add_icon"
+            android:backgroundTint="@color/primary_1"
+            app:tint="@android:color/white"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

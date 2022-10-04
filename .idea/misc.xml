@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/add_icon.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/background_curve.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/bottom_icon_sel.xml" value="0.169" />
         <entry key="../TravelGuideApp/app/src/main/res/drawable/bottom_nav_bg.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/bottom_nav_color.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/guide_bottom_icon_sel.xml" value="0.124" />
         <entry key="../TravelGuideApp/app/src/main/res/drawable/guide_icon.xml" value="0.2225" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/search_bottom_icon_sel.xml" value="0.124" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/trip_bottom_icon_sel.xml" value="0.124" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/activity_main.xml" value="0.203125" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_all.xml" value="0.23505434782608695" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_bookmark.xml" value="0.23505434782608695" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_guide.xml" value="0.3" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_home.xml" value="0.33" />

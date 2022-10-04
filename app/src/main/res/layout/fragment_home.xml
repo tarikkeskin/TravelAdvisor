@@ -83,8 +83,6 @@
                 android:id="@+id/constraintLayout2"
                 android:layout_width="0dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -93,13 +91,18 @@
                     android:id="@+id/tablayoutHome"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
+                    android:maxWidth="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:tabIconTint="#FF4760"
-                    app:tabIndicatorColor="#FF4760"
-                    app:tabTextColor="#FF4760">
+                    app:tabIndicatorColor="@color/primary_1"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabTextAppearance="@style/MineCustomTabText"
+                    app:tabTextColor="@color/bottom_nav_color"
+                    app:tabPaddingStart="0dp"
+                    app:tabPaddingEnd="0dp"
+                    >
 
                     <com.google.android.material.tabs.TabItem
                         android:layout_width="wrap_content"

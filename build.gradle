@@ -4,6 +4,7 @@ buildscript {
         navigation = "2.3.3"
         lifecycle_version = "2.4.0"
     }
+
 }
 
 plugins {
