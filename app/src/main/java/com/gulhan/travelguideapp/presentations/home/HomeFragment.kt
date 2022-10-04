@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.doOnAttach
 import androidx.databinding.DataBindingUtil
 import com.google.android.material.tabs.TabLayoutMediator
@@ -30,12 +31,20 @@ class HomeFragment : Fragment() {
         }
         binding.viewpagerHome.isUserInputEnabled = false // this is for
         TabLayoutMediator(binding.tablayoutHome,binding.viewpagerHome){ tab, position ->
-            val tabTitles = ArrayList<String>()
-            tabTitles.add("All")
-            tabTitles.add("Flights")
-            tabTitles.add("Hotels")
-            tabTitles.add("Transportations")
-            tab.text = tabTitles[position]
+            when (position) {
+                0 -> {
+                    tab.text = "All"
+                }
+                1 -> {
+                    tab.text = "Flights"
+                }
+                2 -> {
+                    tab.text = "Hotels"
+                }
+                3 -> {
+                    tab.text = "Transportations"
+                }
+            }
         }.attach()
 
 
