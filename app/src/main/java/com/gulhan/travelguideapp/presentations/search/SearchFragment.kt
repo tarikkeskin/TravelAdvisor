@@ -20,7 +20,6 @@ class SearchFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_search,container,false)
 
-
         return binding.root
     }
 
