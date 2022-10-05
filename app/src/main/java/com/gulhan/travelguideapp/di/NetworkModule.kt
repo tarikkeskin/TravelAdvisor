@@ -2,7 +2,9 @@ package com.gulhan.travelguideapp.di
 
 import com.gulhan.travelguideapp.data.remote.ApiService
 import com.gulhan.travelguideapp.data.remote.repository.GuideCategoryRepositoryImp
+import com.gulhan.travelguideapp.data.remote.repository.TravelsRepositoryImp
 import com.gulhan.travelguideapp.domain.repository.GuideCategoriesRepository
+import com.gulhan.travelguideapp.domain.repository.TravelsRepository
 import com.gulhan.travelguideapp.utils.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -41,5 +43,11 @@ class NetworkModule {
     @Singleton
     fun provideAllGuideCategories(apiService: ApiService): GuideCategoriesRepository{
         return GuideCategoryRepositoryImp(apiService)
+    }
+
+    @Provides
+    @Singleton
+    fun provideAllTravelList(apiService: ApiService): TravelsRepository{
+        return TravelsRepositoryImp(apiService)
     }
 }
