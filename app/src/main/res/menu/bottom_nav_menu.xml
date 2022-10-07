@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_bottom_icon_sel" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/search_bottom_icon_sel" />
+    <item
+        android:id="@+id/tripFragment"
+        android:icon="@drawable/trip_bottom_icon_sel" />
+    <item
+        android:id="@+id/guideFragment"
+        android:icon="@drawable/guide_bottom_icon_sel" />
+</menu>

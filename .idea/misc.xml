@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/add_icon.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/background_curve.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/bottom_icon_sel.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/bottom_nav_bg.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/bottom_nav_color.xml" value="0.169" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/bottom_navigation_color.xml" value="0.1" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/guide_bottom_icon_sel.xml" value="0.124" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/guide_category_card_bg.xml" value="0.1635" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/guide_icon.xml" value="0.2225" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/search_bottom_icon_sel.xml" value="0.124" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/searchbar_bg_border.xml" value="0.2465" />
+        <entry key="../TravelGuideApp/app/src/main/res/drawable/trip_bottom_icon_sel.xml" value="0.124" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_all.xml" value="0.23505434782608695" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_bookmark.xml" value="0.23505434782608695" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_guide.xml" value="0.25" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_search.xml" value="0.25" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_trip.xml" value="0.2878278088787044" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_trips.xml" value="0.23505434782608695" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/guide_category_cardview.xml" value="0.5" />
+        <entry key="../TravelGuideApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2989583333333333" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
