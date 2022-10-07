@@ -5,56 +5,44 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.gulhan.travelguideapp.R
+import com.gulhan.travelguideapp.databinding.FragmentAllBinding
+import com.gulhan.travelguideapp.databinding.FragmentHotelsBinding
+import com.gulhan.travelguideapp.domain.model.allList.TravelsItem
+import com.gulhan.travelguideapp.presentations.home.HomeFragmentViewModel
+import com.gulhan.travelguideapp.presentations.home.adapter.HomeCardAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HotelsFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+@AndroidEntryPoint
 class HotelsFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+    private lateinit var binding: FragmentHotelsBinding
+    private lateinit var adapter: HomeCardAdapter
+    private val travelViewModel by viewModels<HomeFragmentViewModel>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hotels, container, false)
-    }
+        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_hotels, container, false)
+        binding.rvHotels.setHasFixedSize(true)
+        binding.rvHotels.layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HotelsFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HotelsFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+        val list: MutableList<TravelsItem> = ArrayList()
+        travelViewModel.getAllTravels().observe(viewLifecycleOwner) {
+            //Log.e("Debug",it.toString())
+            it.forEach{ flight ->
+                if(flight.category == "hotel"){
+                    list.add(flight)
                 }
             }
+            adapter = HomeCardAdapter(requireContext(),list)
+            binding.rvHotels.adapter = adapter
+        }
+        return binding.root
     }
+
 }

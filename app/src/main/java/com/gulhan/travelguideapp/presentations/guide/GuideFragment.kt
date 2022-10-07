@@ -36,7 +36,7 @@ class GuideFragment : Fragment() {
 
         categoryList = ArrayList()
         guideViewModel.getAllGuideCategories().observe(viewLifecycleOwner, Observer {
-            Log.e("Debug", it.toString())
+            //Log.e("Debug", it.toString())
             categoryList = it
             adapter = GuideCategoryAdapter(requireContext(), categoryList)
             binding.rvGuideCategories.adapter = adapter
