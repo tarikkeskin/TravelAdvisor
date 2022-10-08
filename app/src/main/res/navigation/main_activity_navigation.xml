@@ -19,10 +19,27 @@
         android:id="@+id/searchFragment"
         android:name="com.gulhan.travelguideapp.presentations.search.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/search_to_detail"
+            app:destination="@id/detailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tripFragment"
         android:name="com.gulhan.travelguideapp.presentations.trip.TripFragment"
         android:label="fragment_trip"
-        tools:layout="@layout/fragment_trip" />
+        tools:layout="@layout/fragment_trip" >
+        <action
+            android:id="@+id/trip_to_detail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.gulhan.travelguideapp.presentations.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="tripItem"
+            app:argType="com.gulhan.travelguideapp.domain.model.allList.TravelsItem" />
+    </fragment>
 </navigation>

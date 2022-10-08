@@ -1,5 +1,6 @@
 package com.gulhan.travelguideapp.domain.usecase
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.gulhan.travelguideapp.domain.model.guidecategory.GuideCategories
@@ -26,7 +27,7 @@ class GuideCategoriesUseCase @Inject constructor(
             }
 
             override fun onFailure(call: Call<GuideCategories>, t: Throwable) {
-                TODO("Not yet implemented")
+                Log.e("Error:",t.toString())
             }
 
         })

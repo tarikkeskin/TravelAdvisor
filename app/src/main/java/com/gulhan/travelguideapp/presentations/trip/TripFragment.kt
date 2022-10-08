@@ -23,7 +23,7 @@ class TripFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_trip,container,false)
 
-        val adapter = ViewPagerAdapterTrip(parentFragmentManager, lifecycle)
+        val adapter = ViewPagerAdapterTrip(childFragmentManager, lifecycle)
         binding.viewpager.adapter = adapter
         binding.viewpager.doOnAttach {
             binding.viewpager.setCurrentItem(0, true)
