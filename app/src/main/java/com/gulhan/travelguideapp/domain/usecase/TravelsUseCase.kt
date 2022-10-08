@@ -1,5 +1,6 @@
 package com.gulhan.travelguideapp.domain.usecase
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.gulhan.travelguideapp.domain.model.allList.Travels
@@ -24,7 +25,7 @@ class TravelsUseCase @Inject constructor(
             }
 
             override fun onFailure(call: Call<Travels>, t: Throwable) {
-                TODO("Not yet implemented")
+                Log.e("Debug",t.toString())
             }
 
         })

@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.doOnAttach
 import androidx.databinding.DataBindingUtil
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayoutMediator
 import com.gulhan.travelguideapp.R
 import com.gulhan.travelguideapp.databinding.FragmentHomeBinding
@@ -22,9 +24,10 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
+
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_home,container,false)
 
-        val adapter = ViewPagerAdapterHome(parentFragmentManager, lifecycle)
+        val adapter = ViewPagerAdapterHome(childFragmentManager, lifecycle)
         binding.viewpagerHome.adapter = adapter
         binding.viewpagerHome.doOnAttach {
             binding.viewpagerHome.setCurrentItem(0, true)
@@ -47,6 +50,18 @@ class HomeFragment : Fragment() {
             }
         }.attach()
 
+        binding.cardView5.setOnClickListener {
+            Snackbar.make(it,"Flights Clicked!",Snackbar.LENGTH_SHORT).setBackgroundTint(resources.getColor(R.color.primary_1)).show()
+        }
+        binding.cardView20.setOnClickListener {
+            Snackbar.make(it,"Hotels Clicked!",Snackbar.LENGTH_SHORT).setBackgroundTint(resources.getColor(R.color.primary_1)).show()
+        }
+        binding.cardView21.setOnClickListener {
+            Snackbar.make(it,"Cars Clicked!",Snackbar.LENGTH_SHORT).setBackgroundTint(resources.getColor(R.color.primary_1)).show()
+        }
+        binding.cardView22.setOnClickListener {
+            Snackbar.make(it,"Taxi Clicked!", Snackbar.LENGTH_SHORT).setBackgroundTint(resources.getColor(R.color.primary_1)).show()
+        }
 
 
         return binding.root

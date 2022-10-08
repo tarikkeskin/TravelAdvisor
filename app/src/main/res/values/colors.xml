@@ -11,5 +11,6 @@
     <color name="primary_1">#FF4760</color>
     <color name="grey">#C2C5D6</color>
     <color name="blue">#0048F0</color>
+    <color name="bg_grey">#2FC2C5D6</color>
 
 </resources>
