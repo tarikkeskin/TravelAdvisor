@@ -34,7 +34,7 @@
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_guide.xml" value="0.25" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_hotels.xml" value="0.17572463768115942" />
-        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_search.xml" value="0.25" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_transportations.xml" value="0.17572463768115942" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_trip.xml" value="0.22" />
         <entry key="../TravelGuideApp/app/src/main/res/layout/fragment_trips.xml" value="0.23505434782608695" />
